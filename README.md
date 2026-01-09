@@ -1,20 +1,3 @@
-# Vehicle Detector and Counter using YOLOv8
-This project is built to detect and count vehicles in a given video file or live video stream of a highway using YOLOv8. The program outputs a video file with the detected vehicles and the total count of vehicle Inflow and Outflow from the Tolling Booth.
-
-# Dependencies
-
-* streamlit
-* ultralytics
-* opencv-python-headless
-* numpy
-* pandas
-* tqdm
-
-## Quick start (recommended)
-
-1. Create and activate a Python 3.11 virtual environment (or use the provided `.venv311`):
-
-
 # AutoTollBooth — Automatic Toll Booth Vehicle Detector and Counter
 
 AutoTollBooth detects and counts vehicles from uploaded traffic videos using YOLOv8. It runs as a Streamlit web app and provides a live annotated preview while maintaining simple inflow/outflow counts for vehicles crossing a configurable detection line.
