@@ -14,7 +14,7 @@ This project is built to detect and count vehicles in a given video file or live
 
 1. Create and activate a Python 3.11 virtual environment (or use the provided `.venv311`):
 
-```powershell
+
 # AutoTollBooth — Automatic Toll Booth Vehicle Detector and Counter
 
 AutoTollBooth detects and counts vehicles from uploaded traffic videos using YOLOv8. It runs as a Streamlit web app and provides a live annotated preview while maintaining simple inflow/outflow counts for vehicles crossing a configurable detection line.
@@ -27,7 +27,6 @@ This repository contains the Streamlit UI (`app.py`), the detection/tracking hel
 - Vehicle detection + tracking (YOLOv8 via Ultralytics)
 - Inflow / outflow counters using a configurable horizontal line
 - Automatic model management: app ensures weights are available in `models/` (uses Ultralytics cache as fallback)
-- Lightweight PowerShell helper for Windows users (`run_app.ps1`)
 
 ## Quick overview
 
