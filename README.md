@@ -1,19 +1,6 @@
 # Vehicle Detector and Counter using YOLOv8
 This project is built to detect and count vehicles in a given video file or live video stream of a highway using YOLOv8. The program outputs a video file with the detected vehicles and the total count of vehicle Inflow and Outflow from the Tolling Booth.
 
-# Methodology
-
-1. Create a video object using OpenCV and read the video frame by frame.
-2. Scale down the video by a scaling factor for better performance. Default value is 50%.
-3. Use the YOLO model to predict the desired label IDs with a confidence value (preferably 70% or above).
-4. Extract bounding box coordinates, confidence values and class IDs from the prediction.
-5. Use the obtained information to draw bounding boxes along with their respective center points, and print the class and confidence values to each detected object.
-6. To identify traffic Inflow or Outflow:
-    * Draw a reference line at 3/4th of the frame. 
-    * This reference line plus an offset with be the region of interest to determine vehicle Inflow or Outlfow.
-    * Calculate the distance between the center of the bounding boxes and the reference line. Based on the polarity of the resulting distance, the overall inflow or the outflow count is recorded. 
-7. The count of individual types of inbound or outbound vehicles are also maintained using the above technique along with a dictionary of labels and their respective count on either side of the road.
-
 # Dependencies
 
 * streamlit
